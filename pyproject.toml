@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-caption-generator"
+version = "0.1.0"
+description = "An AI-powered image captioning tool that generates descriptive text for images, useful for accessibility and content creation. The project demonstrates AI model integration and natural language processing."
+dependencies = ['tensorflow', 'pillow', 'flask', 'numpy', 'matplotlib']
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+addopts = "-v --tb=short"
