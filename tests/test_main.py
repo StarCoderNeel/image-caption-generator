@@ -74,3 +74,5 @@ class TestIntegration:
         response = self.client.post("/process", json={"input_text": "workflow test"})
         assert response.status_code == 200
         assert response.json()["status"] == "success"
+
+# Test additions for iteration 2
